@@ -1,0 +1,28 @@
+#tiny-header{
+    height: 40px;
+    background-color: blue;
+}
+#header{
+    height: 90px;
+    background-color: white;
+    a{
+        display: flex;
+        justify-self: flex-start;
+        align-items: center;
+        height: 70px;
+        width: 70px;
+        img{
+            width: 100%;
+        }
+    }
+    ul{
+        
+        li{
+            text-decoration: none;
+            list-style: none;
+            display: inline-block;
+            margin: 3px 10px;
+        }
+    }
+    
+}

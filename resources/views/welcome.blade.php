@@ -1,10 +1,13 @@
-@extends("layouts.main");
+@extends("layouts.main")
 
 @section("main-content")
     <main>
-        <section id="comic-list" >
+        <section id="hero">
+            
+        </section>
+        <section id="comic-list"  >
             <div class="container centered">
-                <ul id="list">
+                <ul id="list" class="centered">
                     @foreach ($comics as $comic)
                     <li>
                         <a href="{{ route('comic-book', $comic['id'])}}">
