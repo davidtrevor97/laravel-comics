@@ -13,9 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+// Route::get('/', function () {
 
-    $comics = config('comics');
+//     $comics = config('comics');
 
-    return view('welcome' , compact('comics') );
-});
+//     return view('welcome' , compact('comics') );
+// }) ->name('welcome');
+
+
+//HOMPAGE
+Route::get('/','WelcomeController@index')->name("welcome");
+
+//SINGLE COMIC BOOK
+Route::get('/comic/{id}','ComicController@show')->name("comic-book");
